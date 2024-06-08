@@ -1,0 +1,91 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    background-color: #E4E4E4;
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width: 100%;
+}
+
+.app-lista, .app-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 95%;
+    margin: auto;
+}
+
+.superior, .form {
+    flex: 10;
+    overflow: auto;
+}
+
+.inferior, .botoes {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha, .form-linha {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.botao-novo, .botao {
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+.botao-novo:hover, .botao:hover {
+    background-color: #0056b3;
+}
+
+.imagem {
+    flex: 4;
+    border: 1px solid #ccc;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-linha-esq {
+    flex: 1;
+    font-weight: bold;
+}
+
+.form-linha-dir {
+    flex: 5;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
